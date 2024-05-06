@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/PH-Realtors-Logo.png">
+    <link rel="stylesheet" href="/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        })
+
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+/* Slider Script */
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="PropertySection1" style="background-color: #f0f0f0;">
+<div id="propertyInside" >
+    <div class="PropertyName" style=" text-align: left; " >
+        <h2 class="orchard" >Orchard At Godrej Se7en</h2>
+        <p style="margin: 0px;">by <span style="color: #ab064f; font-weight: bold; "> <a> Godrej Properties</a></span></p>
+        <p style="font-size: 14px; font-weight: 600;"><a class="fa fa-map-marker" style="color: black; padding: 0px;"></a> ORCHARD AT GODREJ SE7EN ,JOKA, KOLKATA</p>
+    </div>
+    <div class="PropertyName2" >
+        <div class="insideProperty">
+            <p class="capsules"> Zero Brokerage</p>
+            <p class="capsules"> Best Price Guaranteed</p>
+</div>
+<div class="price">
+    <p class="price1" >INR 2.18 Cr <br> <span style="font-size: 17px; font-weight: 500;"> Onwards</span></p>
+</div>
+    </div>
+ </div>
+ <!-- Property Images and details start here-->
+<div class="propertySlides">
+<div id="propertySlide">
+    <div class="slideshow-container">
+        <div class="mySlides2" style="display: none;">
+          <img src="/Images/Elevation_View_Four-1024x512.jpg" style="width:100%;  height: 400px; object-fit: cover;">
+        </div>
+      
+        <div class="mySlides2" style="display: none;">
+          <img src="/Images/Elevation_View_Three-1024x512.jpg" style="width:100%; height: 400px; object-fit: cover;">
+        </div>
+      
+        <div class="mySlides2">
+          <img src="/Images/Elevation_View_Two-1024x512.jpg" style="width:100% ; height: 400px; object-fit: cover;">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      
+</div>
+<div id="propertyDetails1">
+    <div class="information">
+<div class="PropertyDetail">
+    <p style="margin: 0px;">Possession Date</p>
+    <h3 class="thirty">Nov, 2025</h3>
+</div>
+<div class="PropertyDetail">
+    <p style="margin: 0px;">Configurations</p>
+    <h3 class="thirty">2, 3 & 4 BHK</h3>
+</div>
+    </div>
+    <div class="information">
+        <div class="PropertyDetail">
+            <p style="margin: 0px;">Status</p>
+            <h3 class="thirty">Under Construction</h3>
+        </div>
+        <div class="PropertyDetail">
+            <p style="margin: 0px;">Carpet Area</p>
+            <h3 class="thirty">849 - 2695 sq ft</h3>
+        </div>
+            </div> 
+        <button style="text-align: center; display: block; font-size: 20px; background: #ab064f; color: white; padding: 10px; border: none; margin-top: 30px;">Contact Seller</button>
+        </div>
+    
+</div>
+<!--Menu Starts here-->
+
+<div class="smallMenu">
+<h4>Overview</h4>
+<h4 >Configuration</h4>
+<h4 >Amenities</h4>
+<h4 >Location</h4>
+<h4 >Gallery</h4>
+<h4 >Developer</h4>
+</div>
+
+<!--Main Container-->
+<div class="mainContainer">
+<div class="main">
+<div class="overview">
+   <div class="insideOverview">
+    <h1 class="heading">Overview</h1>
+   </div> 
+   <div class="sizes">
+    <div class="smallSizes">
+      <p style="margin:0px; font-size: 14px;">Project size</p>
+      <h3 style="font-size: 17px; font-weight: 700;margin-bottom: 5px;">2 Buildings- 200units</h3>
+    </div>
+    <div class="smallSizes">
+      <p style="margin:0px; font-size: 14px;">Total Area</p>
+      <h3 style="font-size: 17px; font-weight: 700;margin-bottom: 5px;">3.25 Acres</h3>
+    </div>
+    <div class="smallSizes">
+      <p style="margin:0px; font-size: 14px;">Floors</p>
+      <h3 style="font-size: 17px; font-weight: 700; margin-bottom: 5px;">B+G+14, B+G+ 16</h3>
+    </div>
+   </div>
+   <div class="sizes">
+    <div class="smallSizes">
+      <p style="margin:0px; font-size: 14px;">Status</p>
+      <h3 style="font-size: 17px; font-weight: 700;margin-bottom: 5px;">Under Construction</h3>
+     <div class="progress" >
+      <div class="above">
+      <div class="skill html"></div></div></div>
+    </div>
+    <div class="smallSizes">
+      <p style="margin:0px; font-size: 14px;">Residence Type</p>
+      <h3 style="font-size: 17px; font-weight: 700;margin-bottom: 5px;">Apoartment</h3>
+    </div>
+    <div class="smallSizes">
+      <p style="margin:0px; font-size: 14px;">Unit</p>
+      <h3 style="font-size: 17px; font-weight: 700; margin-bottom: 5px;">100</h3>
+    </div>
+   </div>
+   <div style="padding: 20px;">
+    <p style="margin:0px; font-size: 14px;text-align: left; font-weight: 500;">Imagine an address that could redefine the skyline of South Kolkata. One with the stature 
+      that towers far above the rest and a copper crown that graces its head. One that comes 
+      from intricate design and a deep understanding of what luxury truly is. An address that 
+      takes even the air you breathe to a whole new level. An address that serves as your 
+      </p>
+   </div>
+   
+</div>
+<div class="Configurations">
+  <div class="insideConfigurations">
+    <h1 class="heading">Configurations</h1>
+  </div>
+    <div class="table">
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr style="background-color: black; color: white;">
+          <th><p class="tableContent">Unit Type</p></th>
+          <th><p class="tableContent">Size(SQ. Ft)</p></th>
+          <th><p class="tableContent">Price Range ( ₹)</p></th>
+        </tr>
+        <tr >
+          <td><p class="tableContent">Unit Type</p></td>
+          <td><p class="tableContent">Size(SQ. Ft)</p></td>
+          <td><p class="tableContent">Price Range ( ₹)</p></td>
+        </tr>
+        <tr>
+          <td><p class="tableContent">Unit Type</p></td>
+          <td><p class="tableContent">Size(SQ. Ft)</p></td>
+          <td><p class="tableContent">Price Range ( ₹)</p></td>
+        </tr>
+        <tr>
+          <td><p class="tableContent">Unit Type</p></td>
+          <td><p class="tableContent">Size(SQ. Ft)</p></td>
+          <td><p class="tableContent">Price Range ( ₹)</p></td>
+        </tr>
+      </table>
+      <button style=" background-color: #ab064f; border-radius: 15px; border: none; margin-top: 30px; text-align: center;" >
+        <div style="display: flex;padding: 5px; padding-left: 15px; padding-right: 15px; ">
+        <div style="margin-right:10px;">
+          <svg data-bbox="4.89 0 502.32 512" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-type="color" style="height: 30px; width:30px">
+            <g>
+                <path d="M404.25 1.26h-.14l101.84 106.19v403.29H125.81V512h381.4V108.71L404.25 1.26" fill="#949494" data-color="1"></path>
+                <path d="M402.85 0H124.54v510.74h381.41V107.45L402.85 0" fill="#f1f1f1" data-color="2"></path>
+                <path d="M121.74 27.35H4.89V152.2h367.52V27.35H121.74z" fill="#808080" data-color="3"></path>
+                <path d="M374.37 25.25v124.98H7.27V25.25h367.1z" fill="#dc1d00" data-color="4"></path>
+                <path fill="#4d4d4d" d="M125.53 88.23h-1.68V61.16h3.51c4.07 0 6.59 1.26 8.42 3.37 2.24 2.52 3.37 7.01 3.37 10.24 0 4.49 0 8.56-4.07 11.5-2.12 1.54-5.63 1.96-9.55 1.96m3.5-41.94h-23.85v87.81h18.8v-29.6l4.21.28c4.35 0 8.28-.98 11.78-2.1 3.51-1.12 6.45-3.09 8.98-5.33 2.52-2.24 4.91-5.05 6.17-8.28 1.96-4.91 2.38-11.78 1.96-16.55-.56-4.77-.7-8.7-2.1-11.78-1.4-3.09-3.23-5.61-5.33-7.57a23.928 23.928 0 0 0-7.15-4.35c-2.67-.98-5.05-1.54-7.57-1.96-2.25-.43-4.21-.57-5.9-.57" data-color="5"></path>
+                <path fill="#4d4d4d" d="M189.35 118.11h-1.82V62.14h.28c3.79 0 8.56 0 10.94 1.96 2.52 1.96 4.49 4.49 5.89 7.29 1.4 2.95 2.38 6.17 2.52 9.68.14 4.07 0 7.29 0 10.1 0 2.67 0 6.03-.56 9.4s-1.68 6.31-3.09 9.26c-1.54 2.81-4.21 4.77-6.59 6.59-2.1 1.27-4.62 1.69-7.57 1.69m3.37-71.96c-1.96 0-4.07.14-5.33.14-2.38.14-3.79.14-4.35.14h-14.31v87.81h16.83c7.43 0 13.61-1.12 18.8-3.23 5.19-2.1 9.26-5.19 12.48-8.98 3.09-3.79 5.47-8.42 6.87-13.75s2.1-11.08 2.1-17.39c0-8.14 0-14.45-1.54-20.62-1.4-5.61-4.35-10.1-7.43-13.47-2.95-3.37-6.31-5.75-9.82-7.29s-6.87-2.67-10.1-3.23c-1.4-.13-2.8-.13-4.2-.13" data-color="5"></path>
+                <path d="M282.21 46.43h-44.47v87.81h18.8V99.31h23.71V83.04h-23.71V62.7h25.67V46.43" fill="#4d4d4d" data-color="5"></path>
+                <path fill="#dc1d00" d="M437.21 345.49c-.14-1.68-1.68-22.02-37.87-21.18-36.05.84-44.89 3.09-44.89 3.09s-26.93-27.35-36.75-48.53c0 0 11.92-34.93 11.36-56.81-.56-21.88-5.75-34.51-22.58-34.37-16.83.14-19.22 14.87-17.11 36.75 1.96 19.64 12.2 42.78 12.2 42.78s-7.72 24.13-18.1 48.25c-10.24 24.13-17.25 36.75-17.25 36.75s-34.79 11.64-49.8 25.67-21.18 24.83-13.33 35.63c6.87 9.26 30.72 11.36 52.18-16.69 21.32-28.05 31-45.59 31-45.59s32.68-8.98 42.78-11.36c10.1-2.38 22.44-4.35 22.44-4.35s29.74 30.02 58.49 28.9c28.78-1.12 27.37-17.25 27.23-18.94zm-226.68 63.27c-17.81-10.66 37.45-43.63 47.55-44.75 0 0-28.75 55.97-47.55 44.75zm85.01-192.18c0-17.39 5.61-22.02 9.96-22.02 4.35 0 9.26 2.1 9.4 17.11.14 15.01-9.4 44.47-9.4 44.47-3.23-3.51-9.96-22.3-9.96-39.56zm23.14 118.82c-17.96 4.35-26.93 8.98-26.93 8.98l7.29-16.41c7.29-16.41 14.87-38.86 14.87-38.86 10.1 18.94 30.3 41.24 30.3 41.24s-7.57.56-25.53 5.05zm43.07-1.55s58.35-10.52 58.35 9.4c0 19.78-36.19 11.64-58.35-9.4z" data-color="4"></path>
+                <path d="M401.44 1.4v107.45h103.11L401.44 1.4z" fill="#949494" data-color="1"></path>
+                <path d="M402.85 0v107.45h103.1L402.85 0z" fill="#f1f1f1" data-color="2"></path>
+                <path fill="#fffefe" d="M124.12 86.83h-1.68V59.76h3.51c4.07 0 6.59 1.26 8.42 3.37 2.24 2.52 3.37 7.01 3.37 10.24 0 4.49 0 8.56-4.07 11.5-2.11 1.54-5.62 1.96-9.55 1.96m3.51-41.94h-23.85v87.81h18.8v-29.6l4.21.28c4.35 0 8.28-.98 11.78-2.1 3.51-1.12 6.45-3.09 8.98-5.33 2.52-2.24 4.91-5.05 6.17-8.28 1.96-4.91 2.38-11.78 1.96-16.55-.56-4.77-.7-8.7-2.1-11.78-1.4-3.09-3.23-5.61-5.33-7.57a23.928 23.928 0 0 0-7.15-4.35c-2.67-.98-5.05-1.54-7.57-1.96-2.25-.43-4.22-.57-5.9-.57" data-color="6"></path>
+                <path fill="#fffefe" d="M187.95 116.71h-1.82V60.74h.28c3.79 0 8.56 0 10.94 1.96 2.52 1.96 4.49 4.49 5.89 7.29 1.4 2.95 2.38 6.17 2.52 9.68.14 4.07 0 7.29 0 10.1 0 2.67 0 6.03-.56 9.4s-1.68 6.31-3.09 9.26c-1.54 2.81-4.21 4.77-6.59 6.59-2.1 1.27-4.63 1.69-7.57 1.69m3.36-71.96c-1.96 0-4.07.14-5.33.14-2.38.14-3.79.14-4.35.14h-14.31v87.81h16.83c7.43 0 13.61-1.12 18.8-3.23 5.19-2.1 9.26-5.19 12.48-8.98 3.09-3.79 5.47-8.42 6.87-13.75s2.1-11.08 2.1-17.39c0-8.14 0-14.45-1.54-20.62-1.4-5.61-4.35-10.1-7.43-13.47-2.95-3.37-6.31-5.75-9.82-7.29s-6.87-2.67-10.1-3.23c-1.39-.13-2.79-.13-4.2-.13" data-color="6"></path>
+                <path d="M280.81 45.03h-44.47v87.81h18.8V97.91h23.7V81.64h-23.7V61.3h25.67V45.03" fill="#fffefe" data-color="6"></path>
+            </g>
+        </svg>
+          
+        </div>
+        <div style="color: white;"><a style="color: white;">See Price <br><b>Breakup</a></div>
+        </div>
+        
+      </button>
+    </div>
+    
+</div>
+<!--Amenities-->
+<div class="amenities">
+  <div class="insideAmenities">
+    <h1 class="heading">Amenities</h1>
+  </div>
+  <div class="beforeAmen">
+    <div class="amen">
+      <div class="insideAmen">
+        <img src="/Images/amenity-047874400_1681994791.jpg" width="70">
+        <p style="font-size: 14px; font-weight: 500; margin: 0px;">Air Conditioning</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-066610100_1681992680.png" width="67">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Banquet Hall</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-012610500_1681994397.jpg" width="72">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Club House</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-009881300_1681992990.png" width="67">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Basket Ball Court</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-071469000_1681994453.jpg" width="67">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Car Parking</p>
+      </div>
+    </div>
+    <div class="amen">
+      <div class="insideAmen">
+        <img src="/Images/amenity-047874400_1681994791.jpg" width="70">
+        <p style="font-size: 14px; font-weight: 500; margin: 0px;">Air Conditioning</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-066610100_1681992680.png" width="67">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Banquet Hall</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-012610500_1681994397.jpg" width="72">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Club House</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-009881300_1681992990.png" width="67">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Basket Ball Court</p>
+      </div>
+      <div class="insideAmen">
+        <img src="/Images/amenity-071469000_1681994453.jpg" width="67">
+        <p style="font-size: 14px;font-weight: 500; margin: 0px;">Car Parking</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Siteplan and Floor plan-->
+<div class="amenities">
+  <div class="insideAmenities">
+    <h1 class="heading">Siteplan & Floorplan</h1>
+  </div>
+    <h4 style="margin-top: 10px; margin-bottom: 10px;">SITEPLAN</h4>
+    <img src="/Images/593108_40c1d604aeda4112a121e0197ec61ef2_mv2.webp" class="siteplan">
+     <button style=" background-color: #ab064f; border-radius: 15px; border: none; margin-top: 30px;" >
+        <div style="display: flex;padding: 5px; padding-left: 15px; padding-right: 15px; ">
+        <div style="margin-right:10px;">
+          <svg data-bbox="4.89 0 502.32 512" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-type="color" style="height: 30px; width:30px">
+            <g>
+                <path d="M404.25 1.26h-.14l101.84 106.19v403.29H125.81V512h381.4V108.71L404.25 1.26" fill="#949494" data-color="1"></path>
+                <path d="M402.85 0H124.54v510.74h381.41V107.45L402.85 0" fill="#f1f1f1" data-color="2"></path>
+                <path d="M121.74 27.35H4.89V152.2h367.52V27.35H121.74z" fill="#808080" data-color="3"></path>
+                <path d="M374.37 25.25v124.98H7.27V25.25h367.1z" fill="#dc1d00" data-color="4"></path>
+                <path fill="#4d4d4d" d="M125.53 88.23h-1.68V61.16h3.51c4.07 0 6.59 1.26 8.42 3.37 2.24 2.52 3.37 7.01 3.37 10.24 0 4.49 0 8.56-4.07 11.5-2.12 1.54-5.63 1.96-9.55 1.96m3.5-41.94h-23.85v87.81h18.8v-29.6l4.21.28c4.35 0 8.28-.98 11.78-2.1 3.51-1.12 6.45-3.09 8.98-5.33 2.52-2.24 4.91-5.05 6.17-8.28 1.96-4.91 2.38-11.78 1.96-16.55-.56-4.77-.7-8.7-2.1-11.78-1.4-3.09-3.23-5.61-5.33-7.57a23.928 23.928 0 0 0-7.15-4.35c-2.67-.98-5.05-1.54-7.57-1.96-2.25-.43-4.21-.57-5.9-.57" data-color="5"></path>
+                <path fill="#4d4d4d" d="M189.35 118.11h-1.82V62.14h.28c3.79 0 8.56 0 10.94 1.96 2.52 1.96 4.49 4.49 5.89 7.29 1.4 2.95 2.38 6.17 2.52 9.68.14 4.07 0 7.29 0 10.1 0 2.67 0 6.03-.56 9.4s-1.68 6.31-3.09 9.26c-1.54 2.81-4.21 4.77-6.59 6.59-2.1 1.27-4.62 1.69-7.57 1.69m3.37-71.96c-1.96 0-4.07.14-5.33.14-2.38.14-3.79.14-4.35.14h-14.31v87.81h16.83c7.43 0 13.61-1.12 18.8-3.23 5.19-2.1 9.26-5.19 12.48-8.98 3.09-3.79 5.47-8.42 6.87-13.75s2.1-11.08 2.1-17.39c0-8.14 0-14.45-1.54-20.62-1.4-5.61-4.35-10.1-7.43-13.47-2.95-3.37-6.31-5.75-9.82-7.29s-6.87-2.67-10.1-3.23c-1.4-.13-2.8-.13-4.2-.13" data-color="5"></path>
+                <path d="M282.21 46.43h-44.47v87.81h18.8V99.31h23.71V83.04h-23.71V62.7h25.67V46.43" fill="#4d4d4d" data-color="5"></path>
+                <path fill="#dc1d00" d="M437.21 345.49c-.14-1.68-1.68-22.02-37.87-21.18-36.05.84-44.89 3.09-44.89 3.09s-26.93-27.35-36.75-48.53c0 0 11.92-34.93 11.36-56.81-.56-21.88-5.75-34.51-22.58-34.37-16.83.14-19.22 14.87-17.11 36.75 1.96 19.64 12.2 42.78 12.2 42.78s-7.72 24.13-18.1 48.25c-10.24 24.13-17.25 36.75-17.25 36.75s-34.79 11.64-49.8 25.67-21.18 24.83-13.33 35.63c6.87 9.26 30.72 11.36 52.18-16.69 21.32-28.05 31-45.59 31-45.59s32.68-8.98 42.78-11.36c10.1-2.38 22.44-4.35 22.44-4.35s29.74 30.02 58.49 28.9c28.78-1.12 27.37-17.25 27.23-18.94zm-226.68 63.27c-17.81-10.66 37.45-43.63 47.55-44.75 0 0-28.75 55.97-47.55 44.75zm85.01-192.18c0-17.39 5.61-22.02 9.96-22.02 4.35 0 9.26 2.1 9.4 17.11.14 15.01-9.4 44.47-9.4 44.47-3.23-3.51-9.96-22.3-9.96-39.56zm23.14 118.82c-17.96 4.35-26.93 8.98-26.93 8.98l7.29-16.41c7.29-16.41 14.87-38.86 14.87-38.86 10.1 18.94 30.3 41.24 30.3 41.24s-7.57.56-25.53 5.05zm43.07-1.55s58.35-10.52 58.35 9.4c0 19.78-36.19 11.64-58.35-9.4z" data-color="4"></path>
+                <path d="M401.44 1.4v107.45h103.11L401.44 1.4z" fill="#949494" data-color="1"></path>
+                <path d="M402.85 0v107.45h103.1L402.85 0z" fill="#f1f1f1" data-color="2"></path>
+                <path fill="#fffefe" d="M124.12 86.83h-1.68V59.76h3.51c4.07 0 6.59 1.26 8.42 3.37 2.24 2.52 3.37 7.01 3.37 10.24 0 4.49 0 8.56-4.07 11.5-2.11 1.54-5.62 1.96-9.55 1.96m3.51-41.94h-23.85v87.81h18.8v-29.6l4.21.28c4.35 0 8.28-.98 11.78-2.1 3.51-1.12 6.45-3.09 8.98-5.33 2.52-2.24 4.91-5.05 6.17-8.28 1.96-4.91 2.38-11.78 1.96-16.55-.56-4.77-.7-8.7-2.1-11.78-1.4-3.09-3.23-5.61-5.33-7.57a23.928 23.928 0 0 0-7.15-4.35c-2.67-.98-5.05-1.54-7.57-1.96-2.25-.43-4.22-.57-5.9-.57" data-color="6"></path>
+                <path fill="#fffefe" d="M187.95 116.71h-1.82V60.74h.28c3.79 0 8.56 0 10.94 1.96 2.52 1.96 4.49 4.49 5.89 7.29 1.4 2.95 2.38 6.17 2.52 9.68.14 4.07 0 7.29 0 10.1 0 2.67 0 6.03-.56 9.4s-1.68 6.31-3.09 9.26c-1.54 2.81-4.21 4.77-6.59 6.59-2.1 1.27-4.63 1.69-7.57 1.69m3.36-71.96c-1.96 0-4.07.14-5.33.14-2.38.14-3.79.14-4.35.14h-14.31v87.81h16.83c7.43 0 13.61-1.12 18.8-3.23 5.19-2.1 9.26-5.19 12.48-8.98 3.09-3.79 5.47-8.42 6.87-13.75s2.1-11.08 2.1-17.39c0-8.14 0-14.45-1.54-20.62-1.4-5.61-4.35-10.1-7.43-13.47-2.95-3.37-6.31-5.75-9.82-7.29s-6.87-2.67-10.1-3.23c-1.39-.13-2.79-.13-4.2-.13" data-color="6"></path>
+                <path d="M280.81 45.03h-44.47v87.81h18.8V97.91h23.7V81.64h-23.7V61.3h25.67V45.03" fill="#fffefe" data-color="6"></path>
+            </g>
+        </svg>
+          
+        </div>
+        <div style="color: white;"><a style="color: white;">Download <br><b>Siteplan</a></div>
+        </div>
+        
+      </button>
+      <h4 style="margin-top: 10px; margin-bottom: 10px;">FLOORPLAN</h4>
+      <div class="amen1">
+        <div class="insideAmen1">
+          <img src="/Images/3-BHK-2-300x293.webp" width="100%" >
+          
+        </div>
+        <div class="insideAmen1">
+          <img src="/Images/3BHK-3-296x300.webp" width="100%" >
+         
+        </div>
+        <div class="insideAmen1">
+          <img src="/Images/3-BHK-2-300x293.webp" width="100%" >
+         
+        </div>
+      </div>
+      <div class="amen1">
+        <div class="insideAmen1">
+          <img src="/Images/3-BHK-2-300x293.webp" width="100%" >
+          
+        </div>
+        <div class="insideAmen1">
+          <img src="/Images/3BHK-3-296x300.webp" width="100%" >
+         
+        </div>
+        <div class="insideAmen1">
+          <img src="/Images/3-BHK-2-300x293.webp" width="100%" >
+         
+        </div>
+      </div>
+      <button style=" background-color: #ab064f; border-radius: 15px; border: none; margin-top: 30px; margin-bottom: 30px;" >
+        <div style="display: flex;padding: 5px; padding-left: 15px; padding-right: 15px; ">
+        <div style="margin-right:10px;">
+          <svg data-bbox="4.89 0 502.32 512" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-type="color" style="height: 30px; width:30px">
+            <g>
+                <path d="M404.25 1.26h-.14l101.84 106.19v403.29H125.81V512h381.4V108.71L404.25 1.26" fill="#949494" data-color="1"></path>
+                <path d="M402.85 0H124.54v510.74h381.41V107.45L402.85 0" fill="#f1f1f1" data-color="2"></path>
+                <path d="M121.74 27.35H4.89V152.2h367.52V27.35H121.74z" fill="#808080" data-color="3"></path>
+                <path d="M374.37 25.25v124.98H7.27V25.25h367.1z" fill="#dc1d00" data-color="4"></path>
+                <path fill="#4d4d4d" d="M125.53 88.23h-1.68V61.16h3.51c4.07 0 6.59 1.26 8.42 3.37 2.24 2.52 3.37 7.01 3.37 10.24 0 4.49 0 8.56-4.07 11.5-2.12 1.54-5.63 1.96-9.55 1.96m3.5-41.94h-23.85v87.81h18.8v-29.6l4.21.28c4.35 0 8.28-.98 11.78-2.1 3.51-1.12 6.45-3.09 8.98-5.33 2.52-2.24 4.91-5.05 6.17-8.28 1.96-4.91 2.38-11.78 1.96-16.55-.56-4.77-.7-8.7-2.1-11.78-1.4-3.09-3.23-5.61-5.33-7.57a23.928 23.928 0 0 0-7.15-4.35c-2.67-.98-5.05-1.54-7.57-1.96-2.25-.43-4.21-.57-5.9-.57" data-color="5"></path>
+                <path fill="#4d4d4d" d="M189.35 118.11h-1.82V62.14h.28c3.79 0 8.56 0 10.94 1.96 2.52 1.96 4.49 4.49 5.89 7.29 1.4 2.95 2.38 6.17 2.52 9.68.14 4.07 0 7.29 0 10.1 0 2.67 0 6.03-.56 9.4s-1.68 6.31-3.09 9.26c-1.54 2.81-4.21 4.77-6.59 6.59-2.1 1.27-4.62 1.69-7.57 1.69m3.37-71.96c-1.96 0-4.07.14-5.33.14-2.38.14-3.79.14-4.35.14h-14.31v87.81h16.83c7.43 0 13.61-1.12 18.8-3.23 5.19-2.1 9.26-5.19 12.48-8.98 3.09-3.79 5.47-8.42 6.87-13.75s2.1-11.08 2.1-17.39c0-8.14 0-14.45-1.54-20.62-1.4-5.61-4.35-10.1-7.43-13.47-2.95-3.37-6.31-5.75-9.82-7.29s-6.87-2.67-10.1-3.23c-1.4-.13-2.8-.13-4.2-.13" data-color="5"></path>
+                <path d="M282.21 46.43h-44.47v87.81h18.8V99.31h23.71V83.04h-23.71V62.7h25.67V46.43" fill="#4d4d4d" data-color="5"></path>
+                <path fill="#dc1d00" d="M437.21 345.49c-.14-1.68-1.68-22.02-37.87-21.18-36.05.84-44.89 3.09-44.89 3.09s-26.93-27.35-36.75-48.53c0 0 11.92-34.93 11.36-56.81-.56-21.88-5.75-34.51-22.58-34.37-16.83.14-19.22 14.87-17.11 36.75 1.96 19.64 12.2 42.78 12.2 42.78s-7.72 24.13-18.1 48.25c-10.24 24.13-17.25 36.75-17.25 36.75s-34.79 11.64-49.8 25.67-21.18 24.83-13.33 35.63c6.87 9.26 30.72 11.36 52.18-16.69 21.32-28.05 31-45.59 31-45.59s32.68-8.98 42.78-11.36c10.1-2.38 22.44-4.35 22.44-4.35s29.74 30.02 58.49 28.9c28.78-1.12 27.37-17.25 27.23-18.94zm-226.68 63.27c-17.81-10.66 37.45-43.63 47.55-44.75 0 0-28.75 55.97-47.55 44.75zm85.01-192.18c0-17.39 5.61-22.02 9.96-22.02 4.35 0 9.26 2.1 9.4 17.11.14 15.01-9.4 44.47-9.4 44.47-3.23-3.51-9.96-22.3-9.96-39.56zm23.14 118.82c-17.96 4.35-26.93 8.98-26.93 8.98l7.29-16.41c7.29-16.41 14.87-38.86 14.87-38.86 10.1 18.94 30.3 41.24 30.3 41.24s-7.57.56-25.53 5.05zm43.07-1.55s58.35-10.52 58.35 9.4c0 19.78-36.19 11.64-58.35-9.4z" data-color="4"></path>
+                <path d="M401.44 1.4v107.45h103.11L401.44 1.4z" fill="#949494" data-color="1"></path>
+                <path d="M402.85 0v107.45h103.1L402.85 0z" fill="#f1f1f1" data-color="2"></path>
+                <path fill="#fffefe" d="M124.12 86.83h-1.68V59.76h3.51c4.07 0 6.59 1.26 8.42 3.37 2.24 2.52 3.37 7.01 3.37 10.24 0 4.49 0 8.56-4.07 11.5-2.11 1.54-5.62 1.96-9.55 1.96m3.51-41.94h-23.85v87.81h18.8v-29.6l4.21.28c4.35 0 8.28-.98 11.78-2.1 3.51-1.12 6.45-3.09 8.98-5.33 2.52-2.24 4.91-5.05 6.17-8.28 1.96-4.91 2.38-11.78 1.96-16.55-.56-4.77-.7-8.7-2.1-11.78-1.4-3.09-3.23-5.61-5.33-7.57a23.928 23.928 0 0 0-7.15-4.35c-2.67-.98-5.05-1.54-7.57-1.96-2.25-.43-4.22-.57-5.9-.57" data-color="6"></path>
+                <path fill="#fffefe" d="M187.95 116.71h-1.82V60.74h.28c3.79 0 8.56 0 10.94 1.96 2.52 1.96 4.49 4.49 5.89 7.29 1.4 2.95 2.38 6.17 2.52 9.68.14 4.07 0 7.29 0 10.1 0 2.67 0 6.03-.56 9.4s-1.68 6.31-3.09 9.26c-1.54 2.81-4.21 4.77-6.59 6.59-2.1 1.27-4.63 1.69-7.57 1.69m3.36-71.96c-1.96 0-4.07.14-5.33.14-2.38.14-3.79.14-4.35.14h-14.31v87.81h16.83c7.43 0 13.61-1.12 18.8-3.23 5.19-2.1 9.26-5.19 12.48-8.98 3.09-3.79 5.47-8.42 6.87-13.75s2.1-11.08 2.1-17.39c0-8.14 0-14.45-1.54-20.62-1.4-5.61-4.35-10.1-7.43-13.47-2.95-3.37-6.31-5.75-9.82-7.29s-6.87-2.67-10.1-3.23c-1.39-.13-2.79-.13-4.2-.13" data-color="6"></path>
+                <path d="M280.81 45.03h-44.47v87.81h18.8V97.91h23.7V81.64h-23.7V61.3h25.67V45.03" fill="#fffefe" data-color="6"></path>
+            </g>
+        </svg>
+          
+        </div>
+        <div style="color: white;"><a style="color: white;">Download <br><b>Floorplan</a></div>
+        </div>
+        
+      </button>
+</div>
+<!--About Developer-->
+<div class="amenities">
+  <div class="insideAmenities">
+    <h1 class="heading">Developer of Godrej Orchard</h1>
+  </div>
+    <div class="developer" >
+    <div style="flex:.7">
+    <img src="/Images/Godrej-Group.jpg" style="width: 80%; margin: auto;">
+    
+    <p style="font-size: 25px; margin-top: 0px;">Godrej Properties</p>
+    <p style="font-weight: 400;">View all Properties</p>
+    </div>
+    <div style="flex:1 ;display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+      <p style="margin:0px; font-size: 14px;text-align: left; font-weight: 500;">Imagine an address that could redefine the skyline of South Kolkata. One with the stature 
+        that towers far above the rest and a copper crown that graces its head. One that comes 
+        from intricate design and a deep understanding of what luxury truly is. An address that 
+        takes even the air you breathe to a whole new level. An address that serves as your 
+        </p>
+        <a style="color: #ab064f; text-align: left; font-weight: 400; font-size: 13px;">Read More</a>
+      </div>
+    </div>
+     
+</div>
+<!--Location Map-->
+<div class="amenities">
+  <div class="insideAmenities">
+    <h1 class="heading">Location </h1>
+  </div>
+    
+    <div style="padding: 20px;">
+      <p style="margin:0px; font-size: 14px;text-align: left; font-weight: 500;">Imagine an address that could redefine the skyline of South Kolkata. One with the stature 
+        that towers far above the rest and a copper crown that graces its head. One that comes 
+        from intricate design and a deep understanding of what luxury truly is. An address that 
+        takes even the air you breathe to a whole new level. An address that serves as your 
+        </p>
+        <img src="/Images/Location.jpg" style="width: 100%;">
+      </div>
+</div>
+<!--Gallery-->
+<div class="amenities">
+  <div class="insideAmenities">
+    <h1 class="heading">Gallery </h1>
+  </div>
+    
+    <div class="galleryDesign" >
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="/Images/Elevate_Flipchart_Approved-37.jpg" alt="Cinque Terre" class="galleryImage"  >
+        </a>
+       
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="/Images/Elevate_Flipchart_Approved-38.jpg" alt="Forest" class="galleryImage">
+        </a>
+        
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="/Images/Elevate_Flipchart_Approved-39.jpg" alt="Northern Lights" class="galleryImage">
+        </a>
+        
+      </div>
+      
+      
+      </div>
+      <div class="galleryDesign" >
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="/Images/Elevate_Flipchart_Approved-37.jpg" alt="Cinque Terre" class="galleryImage" >
+          </a>
+         
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="/Images/Elevate_Flipchart_Approved-38.jpg" alt="Forest" class="galleryImage">
+          </a>
+          
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="/Images/Elevate_Flipchart_Approved-39.jpg" alt="Northern Lights" class="galleryImage">
+          </a>
+          
+        </div>
+        
+        
+        </div>
+</div>
+<!--End of main div-->
+</div>
+<!--Side fixed Form-->
+<div class="sideForm">
+<p>Interested ? Enquire Now</p>
+<div class="fixedForm">
+  <form>
+    <label class="label" for="name">First Name</label><br>
+    <input class="formInput" type="text" id="name" name="name" placeholder="Your name.."><br>
+
+    <label class="label" for="mail">Email Address</label><br>
+    <input class="formInput" type="text" id="mail" name="mail" placeholder="Your last name.."><br>
+
+    <label class="label" for="phone">Phone Number</label><br>
+    <input class="formInput" type="tel" id="phone" name="phone" placeholder="123-45-67890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+    <label class="label" for="country">How can we assist you?</label><br>
+    <input type="radio"><span class="label">Residential</span></input>
+    <input type="radio"><span class="label">Commercial</span></input>
+  <div style="text-align: center; margin: 20px;"><input style="border: .5px solid #ab064f; border-radius: 5px; color: #ab064f; padding: 7px;"  type="submit" value="Submit Now"></div>
+    
+  </form>
+  <div style="text-align: center;">
+    <h6 style="font-weight: 600;">Get Updates on Whatsapp <span class="fa fa-whatsapp" style="font-size: 20px;"></span></h6>
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
+
+
