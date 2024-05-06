@@ -469,7 +469,7 @@
     }
     .propertyImage1{
         flex: 1;
-        background-image: url("/Images/urbana-apartments-in-kolkatas-tallest-towers-a_1170753\ \(1\).jpg");
+        background-image: url("Images/urbana-apartments-in-kolkatas-tallest-towers-a_1170753\ \(1\).jpg");
         background-position: center ;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1216,7 +1216,7 @@
             #hero{
                 display: flex;
                 height: 600px;
-                background-image: url("/Images/Group\ 1.jpg");
+                background-image: url("Images/Group\ 1.jpg");
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
